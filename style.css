@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  z-index: 0;
+}
+
+.section1 {
+  position: absolute;
+  z-index: 1;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 4em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+img {
+  position: absolute;
+  width: 200px;
+  fill: rgb(0, 81, 255);
+}
+@media (max-width: 768px) {
+  img {
+    width: 150px;
+  }
+}
